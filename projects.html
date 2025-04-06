@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Showcase</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://images.unsplash.com/photo-1671347020855-8f35d210ee9a?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        h1 {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+        }
+
+        .card-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.2);  /* Transparent background */
+            width: 250px;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            backdrop-filter: blur(5px); /* Add a nice blur effect behind the card */
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+        }
+
+        @media (max-width: 600px) {
+            .card-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Projects</h1>
+    </header>
+    <section class="card-container">
+        <!-- Good Projects (Top) -->
+        <div class="card" onclick="openProject('https://karthikstreak1.github.io/')">
+            <h3>Portfolio</h3>
+        </div>
+        <div class="card" onclick="openProject('https://github.com/KarthikStreak1/jarvas.git')">
+            <h3>Jarvas</h3>
+        </div>
+        <div class="card" onclick="openProject('https://github.com/techstreak/SecureDocs.git')">
+            <h3>SecureDocs</h3>
+        </div>
+        <div class="card" onclick="openProject('https://github.com/techstreak/karthikstudio.git')">
+            <h3>KarthikStudio</h3>
+        </div>
+        <div class="card" onclick="openProject('https://github.com/techstreak/fitness.git')">
+            <h3>Fitness</h3>
+        </div>
+        <div class="card" onclick="openProject('https://github.com/techstreak/resume-maker.git')">
+            <h3>Resume Maker</h3>
+        </div>
+
+        <!-- Other Projects (Below) -->
+        <div class="card" onclick="openProject('https://github.com/KarthikStreak1/projects.git')">
+            <h3>Python Games</h3>
+        </div>
+        <div class="card" onclick="openProject('https://github.com/KarthikStreak1/projects.git')">
+            <h3>Face Detection</h3>
+        </div>
+        <div class="card" onclick="openProject('https://github.com/KarthikStreak1/projects.git')">
+            <h3>Happy-Sad Detector</h3>
+        </div>
+        <div class="card" onclick="openProject('https://github.com/techstreak/techstorecode.git')">
+            <h3>TechStoreCode</h3>
+        </div>
+        <div class="card" onclick="openProject('https://github.com/techstreak/verticalplayer.git')">
+            <h3>VerticalPlayer</h3>
+        </div>
+        <div class="card" onclick="openProject('https://github.com/techstreak/upipay.git')">
+            <h3>UpiPay</h3>
+        </div>
+        <div class="card" onclick="openProject('https://github.com/techstreak/pagedoorbank.git')">
+            <h3>PageDoorBank</h3>
+        </div>
+        <div class="card" onclick="openProject('https://github.com/techstreak/voicecall.git')">
+            <h3>VoiceCall</h3>
+        </div>
+        <div class="card" onclick="openProject('https://github.com/techstreak/player.git')">
+            <h3>Player</h3>
+        </div>
+        <div class="card" onclick="openProject('https://github.com/techstreak/streakchat.git')">
+            <h3>StreakChat</h3>
+        </div>
+        <div class="card" onclick="openProject('https://github.com/techstreak/techstreak.github.io.git')">
+            <h3>TechStreak</h3>
+        </div>
+        <div class="card" onclick="openProject('https://github.com/techstreak/mycallingapp.git')">
+            <h3>MyCallingApp</h3>
+        </div>
+        <div class="card" onclick="openProject('https://github.com/techstreak/moverecommendation.git')">
+            <h3>MoveRecommendation</h3>
+        </div>
+        <div class="card" onclick="openProject('https://github.com/techstreak/snakegame.git')">
+            <h3>AI SnakeGame</h3>
+        </div>
+    </section>
+
+    <script>
+        function openProject(url) {
+            window.open(url, "_blank");
+        }
+    </script>
+</body>
+</html>
